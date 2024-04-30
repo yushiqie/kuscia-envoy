@@ -35,6 +35,7 @@ commands:
             git submodule update --init
             git config --global --add safe.directory ./
             make build-envoy-local
+            
       - store_artifacts:
           path: output
 
