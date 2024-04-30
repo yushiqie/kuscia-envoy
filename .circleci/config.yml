@@ -91,7 +91,7 @@ workflows:
       - linux_build_envoy:
           matrix:
             parameters:
-              executor: [ "linux_x64_executor", "linux_aarch64_executor" ]
+              executor: [ "linux_aarch64_executor" ]
       - docker_image_publish:
           requires:
             - linux_build_envoy
