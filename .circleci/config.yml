@@ -81,7 +81,6 @@ jobs:
             docker buildx build -t {ALIYUN_IMG_TAG} --platform linux/amd64,linux/arm64 -f ./build_image/dockerfile/kuscia-envoy-anolis.Dockerfile . --push
 
 
-
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
